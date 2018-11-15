@@ -1,0 +1,17 @@
+<html>
+<head>
+<title>SIGN-UP</title>
+<link rel="stylesheet" type="text/css" href="homepagestyle.css" />
+</head>
+<body>
+<h1 id="a1" > ENTER YOUR DETAILS </h1>
+<HR/>
+<div>
+<form method="post" action="makeaccount/">
+{% csrf_token %}
+<h3>CHOOSE YOUR USERNAME</h3>
+<input type="text" name="usr"><h3>CHOOSE YOUR PASSWORD</h3>
+<input type="password" name="psw">
+<button type="submit"> Login </button>
+</body>
+</html>
