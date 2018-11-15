@@ -14,7 +14,7 @@ def make(request):
 def logintest(request):
 	user = request.POST['username']
 	password = request.POST['pass']
-	p=login_table.objects.all()
+	# p=login_table.objects.all()
 	if( login_table.objects.filter(user_name=user, pass_word=password)):
 		return render(request,'loginapp/succes.html')
 	else:
